@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name=“description” content=“”>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- サイトタイトル -->
+  <title>デモサイト4</title>
+  <!-- Googleフォント -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <!-- マテリアルアイコン -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- CSS読み込み -->
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="header-logo">
+        <a href="#">クリ★スタ</a>
+      </h1><!-- /.header-logo -->
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item"><a href="#">About</a></li>
+          <li class="header-item"><a href="#">Service</a></li>
+          <li class="header-item"><a href="#">Contents</a></li>
+        </ul>
+      </nav><!-- /.header-nav -->
+      <div class="hamburger" id="open">
+        <img src="img/hamburger.png" class="hamburger-logo">
+      </div><!-- /.hamburger -->
+    </div><!-- /.header-inner -->
+  </header><!-- /.header -->
+
+  <div class="overlay">
+    <span class="material-icons" id="close">close</span>
+    <nav>
+      <ul>
+        <li class="hamburger-item"><a href="#">About</a></li>
+        <li class="hamburger-item"><a href="#">Service</a></li>
+        <li class="hamburger-item"><a href="#">News</a></li>
+        <li class="hamburger-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="mv">
+    <h1 class="site-ttl">Cresta Design.</h1>
+  </div><!-- /.mv -->
+
+  <div id="about" class="about">
+    <div class="container">
+      <h1 class="section-ttl">About</h1>
+      <h2 class="sub-ttl">ミニマルで<br>
+        洗練されたデザインを。</h2>
+      <p class="section-txt">近年、ミニマルなデザインが流行しています。そこで弊社では、クライアント企業様新規サービス等の課題に対してミニマルで洗練されたデザインを実現させることで解決のサポートを致します。もちろん全てのサービスにおいてミニマルなデザインが課題解決になるわけではないので、課題や今後のサービスの展開等しっかりとヒアリングを行なった上でご提案させて頂きます。</p>
+    </div><!-- /.container -->
+  </div><!-- /#about.about -->
+
+  <div id="survice" class="survice">
+    <div class="container">
+      <h1 class="section-ttl">Service</h1>
+      <ul class="survice-list">
+        <li class="survice-item">
+          <figure class="survice-img">
+            <img src="img/service-image@2x.jpg" alt="一眼レフカメラの画像">
+          </figure>
+          <div class="survice-box">
+            <h2 class="sub-ttl">リリース時のサポートで<br>
+              サービスのブランディングを</h2>
+            <p class="section-txt">弊社では、リリース時もサポートさせて頂きます。プレスリリース用のサイトや動画制作を通して、サービスのブランディングを行わせて頂きます。</p>
+          </div><!-- /.survice-box -->
+        </li><!-- /survice-item -->
+        <li class="survice-item rev">
+          <figure class="survice-img">
+            <img src="img/service-image02@2x.jpg" alt="スマホの画像">
+          </figure>
+          <div class="survice-box">
+            <h2 class="sub-ttl">リリース後のサポートで<br>
+              効果を最大化させる</h2>
+            <p class="section-txt">弊社では、リリース後もサポートさせて頂きます。サービスはリリース後に様々な課題にぶつかります。そこでクライアント様と一緒に改善を行うことで、デザインの効果を最大化させます。</p>
+          </div><!-- /.survice-box -->
+        </li><!-- /survice-item -->
+      </ul><!-- /.survice-list -->
+    </div><!-- /.container -->
+  </div><!-- /#survice.survice -->
+
+  <div id="news" class="news">
+    <div class="container">
+      <h1 class="section-ttl">News</h1>
+      <ul class="news-list">
+        <li class="news-item">
+          <figure class="news-img">
+            <img src="img/card-image1@2x.jpg" alt="">
+          </figure>
+          <p class="news-txt">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+        </li><!-- /.news-item -->
+        <li class="news-item">
+          <figure class="news-img">
+            <img src="img/card-image2@2x.jpg" alt="">
+          </figure>
+          <p class="news-txt">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+        </li><!-- /.news-item -->
+        <li class="news-item">
+          <figure class="news-img">
+            <img src="img/card-image3@2x.jpg" alt="">
+          </figure>
+          <p class="news-txt">新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。</p>
+        </li><!-- /.news-item -->
+      </ul><!-- /.news-list -->
+    </div><!-- /.container -->
+  </div><!-- /#news.news -->
+
+  <div id="contact" class="contact">
+    <div class="container">
+      <h2 class="sub-ttl">お問い合わせ</h2>
+      <form action="program.php" method="POST">
+        <div class="contact-box">
+          <label class="contact-txt" for="input-name">担当者名</label>
+          <input type="text" name="name" id="input-name">
+        </div><!-- /.contact-box -->
+        <div class="contact-box">
+          <label class="contact-txt" for="input-phone">電話番号</label>
+          <input type="text" name="phone-number" id="input-phone">
+        </div><!-- /.contact-box -->
+        <div class="contact-box">
+          <label class="contact-txt" for="input-mail">メールアドレス</label>
+          <input type="text" name="mail" id="input-mail">
+        </div><!-- /.contact-box -->
+        <div class="contact-box">
+          <label class="contact-txt" for="textarea">お問い合わせ内容</label>
+          <textarea name="info" cols="30" rows="10" id="textarea"></textarea>
+        </div><!-- /.contact-box -->
+        <a href="#" class="btn">送信</a>
+      </form>
+    </div><!-- /.container -->
+  </div><!-- /#contact.contact -->
+
+  <footer class="footer">
+    <p class="footer-copy">&copy;crest.design all rights reserved</p>
+  </footer><!-- /.footer -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>

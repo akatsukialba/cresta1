@@ -1,0 +1,436 @@
+/* ------------------------------ */
+/* base
+/* ------------------------------ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* 10px */
+}
+
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div, figure,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: 0;
+  line-height: 1;
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  opacity: .7;
+  transition: .3s;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* ------------------------------ */
+/* layout
+/* ------------------------------ */
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 14%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 4vw;
+  }
+}
+
+/* ------------------------------ */
+/* parts
+/* ------------------------------ */
+.section-ttl {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  padding-bottom: 70px;
+}
+
+.sub-ttl {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #141414;
+  letter-spacing: 0.1em;
+  line-height: 2;
+}
+
+.section-txt {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  line-height: 2.14;
+}
+
+.btn {
+  width: 235px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #1B1310;
+  color: #fff;
+  border-radius: 51px;
+  box-shadow: 0 0 6px #1B1310;
+}
+
+/* ------------------------------ */
+/* header
+/* ------------------------------ */
+.header {
+  background-color: #1B1310;
+  height: 72px;
+}
+
+.header-inner {
+  height: 72px;
+  padding: 0 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .header-inner {
+    height: 75px;
+    padding: 4vw;
+  }
+}
+
+.header-logo a {
+  font-size: 26px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  font-size: 1.6rem;
+  margin-right: 55px;
+}
+
+.header-item:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger-logo {
+    width: 25px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/* ------------------------------ */
+/* overlay
+/* ------------------------------ */
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #1B1310;
+  text-align: center;
+  padding-top: 212px;
+  opacity: 0;
+  transition: opacity .6s;
+  pointer-events: none;
+}
+
+.overlay #close {
+  position: absolute;
+  top: 23px;
+  right: 4vw;
+  color: #fff;
+  font-size: 32px;
+  display: block;
+  cursor: pointer;
+}
+
+.overlay .hamburger-item {
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+}
+
+.overlay .hamburger-item:nth-child(n+2) {
+  margin-top: 50px;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* ------------------------------ */
+/* mv
+/* ------------------------------ */
+.mv {
+  background: url(../img/fv-bgi@2x.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mv .site-ttl {
+  font-size: 5rem;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 35px 42px;
+  letter-spacing: 0.05em;
+}
+
+@media screen and (max-width: 768px) {
+  .mv .site-ttl {
+    font-size: 3rem;
+    padding: 30px 40px;
+  }
+}
+
+/* ------------------------------ */
+/* about
+/* ------------------------------ */
+.about {
+  padding-top: 100px;
+}
+
+.about .section-txt {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .about .section-txt {
+    margin-top: 34px;
+  }
+}
+
+/* ------------------------------ */
+/* survice
+/* ------------------------------ */
+.survice {
+  padding-top: 150px;
+}
+
+.survice-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .survice-item {
+    flex-direction: column-reverse;
+  }
+}
+
+.survice-img {
+  width: 47%;
+  max-width: 480px;
+}
+
+@media screen and (max-width: 768px) {
+  .survice-img {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.survice-box {
+  width: 47%;
+  max-width: 480px;
+}
+
+@media screen and (max-width: 768px) {
+  .survice-box {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.survice-box .section-txt {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  .survice-box .section-txt {
+    margin-top: 34px;
+    margin-bottom: 40px;
+  }
+}
+
+.survice .rev {
+  flex-direction: row-reverse;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .survice .rev {
+    flex-direction: column-reverse;
+    margin-top: 55px;
+  }
+}
+
+/* ------------------------------ */
+/* news
+/* ------------------------------ */
+.news {
+  padding-top: 150px;
+  padding-bottom: 157px;
+}
+
+.news-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .news-list {
+    flex-direction: column;
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.news-item {
+  width: 31%;
+  max-width: 320px;
+  box-shadow: 0 0 6px #1B1310;
+}
+
+@media screen and (max-width: 768px) {
+  .news-item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .news-item:nth-child(n+2) {
+    margin-top: 50px;
+  }
+}
+
+.news-txt {
+  font-size: 1.3rem;
+  padding: 25px 32px;
+  letter-spacing: 0.05em;
+  line-height: 1.9;
+}
+
+/* ------------------------------ */
+/* contact
+/* ------------------------------ */
+.contact {
+  text-align: center;
+}
+
+.contact .sub-ttl {
+  margin-bottom: 75px;
+}
+
+.contact form {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .contact form {
+    max-width: 100%;
+  }
+}
+
+.contact input, .contact textarea {
+  border: 1px solid #141414;
+  padding: 8px;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.contact input {
+  margin-bottom: 25px;
+}
+
+.contact textarea {
+  height: 171px;
+}
+
+.contact-txt {
+  display: block;
+  text-align: left;
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 5px;
+}
+
+/* ------------------------------ */
+/* footer
+/* ------------------------------ */
+.footer {
+  width: 100%;
+  height: 79px;
+  line-height: 79px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-size: 1.4rem;
+  background-color: #1B1310;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    height: 60px;
+    line-height: 60px;
+  }
+}
